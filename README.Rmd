@@ -18,7 +18,9 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of Assignment2 is to learn wrapping functions inside an R package. The package contains a subsidy function that calculates the amount of subsidy received in teh form of reimbursment, based on base value and subsidy percentage. 
+The goal of Assignment2 is to learn wrapping functions inside an R package. The package contains a subsidy function that calculates the amount of subsidy received in the form of reimbursement, based on base value and subsidy percentage. 
+
+subsidy received = x*(1-%)
 
 ## Installation
 
@@ -28,9 +30,11 @@ You can install the released version of Assignment2 from [CRAN](https://CRAN.R-p
 devtools::install_github("berudri/Assignment2)
 ```
 
-For this assignment, I created a new package via devtools using create_package(), and then created a local git repository with the help of use_git().
+For this assignment, I followed the following steps:
 
-Use load_all() to load teh functions to be used as shown in the examples.
+1. Created a new package via devtools using create_package(), and then created a local git repository with the help of use_git().
+
+2. Use load_all() to load teh functions to be used as shown in the examples.
 
 ## Example
 
@@ -47,14 +51,16 @@ fifty(2450)
 eighty(2450)
 ```
 
-Save each function as a seperate R folder using use_r() and run check().
+3. Save each function as a seperate R folder using use_r() and run check().
 
-Next, it is important to add required documentation for each function. This is done biw library(roxygen2). After adding in the documentation, it can be rendered thriugh document().
+4. Next, it is important to add required documentation for each function. This is done biw library(roxygen2). After adding in the documentation, it can be rendered thriugh document().
 
-Testing the function: through use_testthat() and use_test()
+5. Testing the function: through use_testthat() and use_test()
 
+6.
 Finally, I created the README file using use_readme_rmd and knitted it using build_readme(). 
-You can add a Vignette using use_vignette
+
+7. Add a Vignette using use_vignette
 
 
 
