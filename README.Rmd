@@ -37,18 +37,13 @@ library(Assignment2)
 subsidy(1300,40)
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
+You can also use the other two functions that specify the amount of subsidy"
+```{r}
+fifty(2450)
+eighty(2450)
 ```
 
 You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
 
-You can also embed plots, for example:
 
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
+Don't forget to commit and push the resulting figure files, so they display on GitHub!
